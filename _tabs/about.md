@@ -1,8 +1,6 @@
 ---
-layout: single
-title: "About"
-permalink: /about/
-author_profile: true
+icon: fas fa-info-circle
+order: 4
 ---
 
 IT support professional with experience in helpdesk and systems administration. I enjoy solving real-world problems, building out home lab environments, and writing up the things I learn along the way.
@@ -16,10 +14,7 @@ IT support professional with experience in helpdesk and systems administration. 
 
 ## Certifications
 
-<!-- Add your certs here, e.g.: -->
-CompTIA A+
-<!-- - CompTIA Network+ -->
-<!-- - Microsoft MD-102 -->
+- CompTIA A+
 
 ## Contact
 
