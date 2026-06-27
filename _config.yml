@@ -1,25 +1,25 @@
-theme: jekyll-theme-chirpy
-
-lang: en
-timezone: America/Chicago
-
 title: Hiram Martinez
 tagline: IT Support | Sysadmin
 description: IT support professional. Helpdesk, sysadmin, home lab enthusiast.
 
 url: "https://hiramatx.github.io"
+baseurl: ""
 
-github:
-  username: hiramatx
+timezone: America/Chicago
+lang: en
 
-social:
+author:
   name: Hiram Martinez
   email: hiram.martinez@gmail.com
-  links:
-    - https://github.com/hiramatx
-    - https://www.linkedin.com/in/hiram-martinez/
+
+social:
+  github: hiramatx
+  linkedin: hiram-martinez
 
 avatar: /assets/images/avatar.jpg
 
-comments:
-  active: false
+permalink: /posts/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

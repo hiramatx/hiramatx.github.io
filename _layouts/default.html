@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-container">
+      <a class="site-title" href="/">{{ site.title }}</a>
+      <ul class="nav-links">
+        <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
+        <li><a href="/blog/"{% if page.url contains "/blog" %} class="active"{% endif %}>Blog</a></li>
+        <li><a href="/about/"{% if page.url contains "/about" %} class="active"{% endif %}>About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <span>&copy; {{ "now" | date: "%Y" }} {{ site.author.name }}</span>
+      <div class="footer-links">
+        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

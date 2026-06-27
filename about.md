@@ -1,6 +1,7 @@
 ---
-icon: fas fa-info-circle
-order: 4
+layout: page
+title: About
+permalink: /about/
 ---
 
 IT support professional with experience in helpdesk and systems administration. I enjoy solving real-world problems, building out home lab environments, and writing up the things I learn along the way.
